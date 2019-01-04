@@ -1,4 +1,4 @@
-FROM nvidia/cuda:devel
+FROM nvidia/cuda:10.0-devel
 RUN pip3 install \
     jupyterhub==0.7.2 \
     'notebook>=5.0,<=6.0' \
