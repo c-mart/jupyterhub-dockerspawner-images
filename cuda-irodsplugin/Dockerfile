@@ -12,7 +12,8 @@ RUN pip3 install \
     jupyterhub==0.7.2 \
     'notebook>=5.0,<=6.0' \
     jupyterlab \
-    jupyterlab_irods
+    jupyterlab_irods \
+    pycuda
 # From https://github.com/towicode/IJab
 RUN jupyter serverextension enable --py jupyterlab_irods
 RUN jupyter labextension install ijab
