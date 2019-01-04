@@ -9,7 +9,7 @@ RUN apt-get -y install npm
 
 RUN apt-get -y install python3-pip
 RUN pip3 install \
-    jupyterhub==0.7.2 \
+    jupyterhub==0.9.4 \
     'notebook>=5.0,<=6.0' \
     jupyterlab \
     jupyterlab_irods \
