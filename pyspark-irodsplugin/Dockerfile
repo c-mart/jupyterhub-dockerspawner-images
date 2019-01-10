@@ -7,6 +7,7 @@ RUN apt-get update
 # iRODS iCommands
 RUN wget https://s3-us-west-1.amazonaws.com/atmosphere-ansible-files/irods-icommands-4.1.9-cv-64bit-ubuntu-14.deb
 RUN dpkg -i irods-icommands-4.1.9-cv-64bit-ubuntu-14.deb
+RUN rm irods-icommands-4.1.9-cv-64bit-ubuntu-14.deb
 
 # Get npm required for Jupyter Lab extensions
 # https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-18-04
