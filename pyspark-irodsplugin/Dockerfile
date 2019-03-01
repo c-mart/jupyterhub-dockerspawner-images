@@ -20,8 +20,8 @@ RUN pip install \
     jupyterlab_irods
 # From https://github.com/towicode/IJab
 RUN jupyter serverextension enable --py jupyterlab_irods
-RUN jupyter labextension install ijab
 RUN jupyter labextension install @jupyterlab/hub-extension
+RUN jupyter labextension install ijab
 
 USER jovyan
 
